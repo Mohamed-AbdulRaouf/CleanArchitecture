@@ -13,6 +13,8 @@
 		D9915B652887F8B900AEEE4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9915B642887F8B900AEEE4E /* Preview Assets.xcassets */; };
 		D9915B672887F8B900AEEE4E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B662887F8B900AEEE4E /* Persistence.swift */; };
 		D9915B6A2887F8B900AEEE4E /* CleanArchitecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9915B682887F8B900AEEE4E /* CleanArchitecture.xcdatamodeld */; };
+		D9915B7F288801B100AEEE4E /* Failures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B7E288801B100AEEE4E /* Failures.swift */; };
+		D9915B82288801D200AEEE4E /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B81288801D200AEEE4E /* Usecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		D9915B642887F8B900AEEE4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9915B662887F8B900AEEE4E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D9915B692887F8B900AEEE4E /* CleanArchitecture.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CleanArchitecture.xcdatamodel; sourceTree = "<group>"; };
+		D9915B7E288801B100AEEE4E /* Failures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failures.swift; sourceTree = "<group>"; };
+		D9915B81288801D200AEEE4E /* Usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		D9915B5C2887F8B200AEEE4E /* CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				D9915B702888016A00AEEE4E /* App */,
 				D9915B5D2887F8B200AEEE4E /* CleanArchitectureApp.swift */,
 				D9915B5F2887F8B200AEEE4E /* ContentView.swift */,
 				D9915B612887F8B900AEEE4E /* Assets.xcassets */,
@@ -71,6 +76,127 @@
 				D9915B642887F8B900AEEE4E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9915B702888016A00AEEE4E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B712888016A00AEEE4E /* Core */,
+				D9915B722888016A00AEEE4E /* Features */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D9915B712888016A00AEEE4E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B80288801BD00AEEE4E /* Usecases */,
+				D9915B7D2888018C00AEEE4E /* Error */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D9915B722888016A00AEEE4E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B732888016A00AEEE4E /* Number Trivia */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D9915B732888016A00AEEE4E /* Number Trivia */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B742888016A00AEEE4E /* Data */,
+				D9915B782888016A00AEEE4E /* Domain */,
+				D9915B7C2888016A00AEEE4E /* Presentation */,
+			);
+			path = "Number Trivia";
+			sourceTree = "<group>";
+		};
+		D9915B742888016A00AEEE4E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B752888016A00AEEE4E /* Datasources */,
+				D9915B762888016A00AEEE4E /* Repositories */,
+				D9915B772888016A00AEEE4E /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D9915B752888016A00AEEE4E /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		D9915B762888016A00AEEE4E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D9915B772888016A00AEEE4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9915B782888016A00AEEE4E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B792888016A00AEEE4E /* Repositories */,
+				D9915B7A2888016A00AEEE4E /* Usecases */,
+				D9915B7B2888016A00AEEE4E /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D9915B792888016A00AEEE4E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D9915B7A2888016A00AEEE4E /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		D9915B7B2888016A00AEEE4E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D9915B7C2888016A00AEEE4E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D9915B7D2888018C00AEEE4E /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B7E288801B100AEEE4E /* Failures.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		D9915B80288801BD00AEEE4E /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B81288801D200AEEE4E /* Usecase.swift */,
+			);
+			path = Usecases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +272,8 @@
 				D9915B6A2887F8B900AEEE4E /* CleanArchitecture.xcdatamodeld in Sources */,
 				D9915B672887F8B900AEEE4E /* Persistence.swift in Sources */,
 				D9915B602887F8B200AEEE4E /* ContentView.swift in Sources */,
+				D9915B82288801D200AEEE4E /* Usecase.swift in Sources */,
+				D9915B7F288801B100AEEE4E /* Failures.swift in Sources */,
 				D9915B5E2887F8B200AEEE4E /* CleanArchitectureApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
