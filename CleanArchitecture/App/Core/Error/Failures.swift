@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+public typealias Failure = (Error)
+
+enum FailuresError: Error {
+    case noInternet
+}
+
+class Failures: Error {
+    var message = ""
+}
+
+class ServerFailure: Failures {}
+
+class CacheFailure: Failures {}

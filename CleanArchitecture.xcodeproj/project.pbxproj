@@ -15,9 +15,22 @@
 		D9915B6A2887F8B900AEEE4E /* CleanArchitecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9915B682887F8B900AEEE4E /* CleanArchitecture.xcdatamodeld */; };
 		D9915B7F288801B100AEEE4E /* Failures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B7E288801B100AEEE4E /* Failures.swift */; };
 		D9915B82288801D200AEEE4E /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B81288801D200AEEE4E /* Usecase.swift */; };
+		D9915B872888058700AEEE4E /* NumberTriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B862888058700AEEE4E /* NumberTriviaView.swift */; };
+		D9915B89288830C100AEEE4E /* NumberTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B88288830C100AEEE4E /* NumberTrivia.swift */; };
+		D9915B8B288837B500AEEE4E /* NumberTriviaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B8A288837B500AEEE4E /* NumberTriviaRepository.swift */; };
+		D9915B91288851F900AEEE4E /* NumberTriviaUsecases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B90288851F900AEEE4E /* NumberTriviaUsecases.swift */; };
+		D9915B93288856A600AEEE4E /* NumberTriviaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B92288856A600AEEE4E /* NumberTriviaModel.swift */; };
+		D9915B952888A4E500AEEE4E /* NumberTriviaRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B942888A4E500AEEE4E /* NumberTriviaRepositoryImpl.swift */; };
+		D9915B982888A5CC00AEEE4E /* NetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B972888A5CC00AEEE4E /* NetworkInfo.swift */; };
+		D9915B9A2888AA9400AEEE4E /* NumberTriviaRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B992888AA9400AEEE4E /* NumberTriviaRemoteDataSource.swift */; };
+		D9915B9C2888B7C200AEEE4E /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B9B2888B7C200AEEE4E /* Exception.swift */; };
+		D9915B9E2888BA6400AEEE4E /* NumberTriviaLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B9D2888BA6400AEEE4E /* NumberTriviaLocalDataSource.swift */; };
+		F1E45D889DAB755C971B35A8 /* Pods_CleanArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A65D954C321F297C27A8EC /* Pods_CleanArchitecture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5031502E9E200F425983132B /* Pods-CleanArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitecture.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitecture/Pods-CleanArchitecture.release.xcconfig"; sourceTree = "<group>"; };
+		5C670737101F4E91A1C3F1C9 /* Pods-CleanArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitecture.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitecture/Pods-CleanArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
 		D9915B5A2887F8B200AEEE4E /* CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9915B5D2887F8B200AEEE4E /* CleanArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureApp.swift; sourceTree = "<group>"; };
 		D9915B5F2887F8B200AEEE4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +40,17 @@
 		D9915B692887F8B900AEEE4E /* CleanArchitecture.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CleanArchitecture.xcdatamodel; sourceTree = "<group>"; };
 		D9915B7E288801B100AEEE4E /* Failures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failures.swift; sourceTree = "<group>"; };
 		D9915B81288801D200AEEE4E /* Usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
+		D9915B862888058700AEEE4E /* NumberTriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTriviaView.swift; sourceTree = "<group>"; };
+		D9915B88288830C100AEEE4E /* NumberTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTrivia.swift; sourceTree = "<group>"; };
+		D9915B8A288837B500AEEE4E /* NumberTriviaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTriviaRepository.swift; sourceTree = "<group>"; };
+		D9915B90288851F900AEEE4E /* NumberTriviaUsecases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTriviaUsecases.swift; sourceTree = "<group>"; };
+		D9915B92288856A600AEEE4E /* NumberTriviaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTriviaModel.swift; sourceTree = "<group>"; };
+		D9915B942888A4E500AEEE4E /* NumberTriviaRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTriviaRepositoryImpl.swift; sourceTree = "<group>"; };
+		D9915B972888A5CC00AEEE4E /* NetworkInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfo.swift; sourceTree = "<group>"; };
+		D9915B992888AA9400AEEE4E /* NumberTriviaRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTriviaRemoteDataSource.swift; sourceTree = "<group>"; };
+		D9915B9B2888B7C200AEEE4E /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
+		D9915B9D2888BA6400AEEE4E /* NumberTriviaLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTriviaLocalDataSource.swift; sourceTree = "<group>"; };
+		F3A65D954C321F297C27A8EC /* Pods_CleanArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +58,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E45D889DAB755C971B35A8 /* Pods_CleanArchitecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A67127F88AEA9E211F02994 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C670737101F4E91A1C3F1C9 /* Pods-CleanArchitecture.debug.xcconfig */,
+				5031502E9E200F425983132B /* Pods-CleanArchitecture.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		85557DAB18FAA8D79737102D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3A65D954C321F297C27A8EC /* Pods_CleanArchitecture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9915B512887F8B200AEEE4E = {
 			isa = PBXGroup;
 			children = (
 				D9915B5C2887F8B200AEEE4E /* CleanArchitecture */,
 				D9915B5B2887F8B200AEEE4E /* Products */,
+				7A67127F88AEA9E211F02994 /* Pods */,
+				85557DAB18FAA8D79737102D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +134,7 @@
 		D9915B712888016A00AEEE4E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D9915B962888A5B600AEEE4E /* Network */,
 				D9915B80288801BD00AEEE4E /* Usecases */,
 				D9915B7D2888018C00AEEE4E /* Error */,
 			);
@@ -127,6 +172,8 @@
 		D9915B752888016A00AEEE4E /* Datasources */ = {
 			isa = PBXGroup;
 			children = (
+				D9915B992888AA9400AEEE4E /* NumberTriviaRemoteDataSource.swift */,
+				D9915B9D2888BA6400AEEE4E /* NumberTriviaLocalDataSource.swift */,
 			);
 			path = Datasources;
 			sourceTree = "<group>";
@@ -134,6 +181,7 @@
 		D9915B762888016A00AEEE4E /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				D9915B942888A4E500AEEE4E /* NumberTriviaRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -141,6 +189,7 @@
 		D9915B772888016A00AEEE4E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D9915B92288856A600AEEE4E /* NumberTriviaModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +207,7 @@
 		D9915B792888016A00AEEE4E /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				D9915B8A288837B500AEEE4E /* NumberTriviaRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -165,6 +215,7 @@
 		D9915B7A2888016A00AEEE4E /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
+				D9915B90288851F900AEEE4E /* NumberTriviaUsecases.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -172,6 +223,7 @@
 		D9915B7B2888016A00AEEE4E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				D9915B88288830C100AEEE4E /* NumberTrivia.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -179,6 +231,7 @@
 		D9915B7C2888016A00AEEE4E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D9915B852888056500AEEE4E /* VIew */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -187,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				D9915B7E288801B100AEEE4E /* Failures.swift */,
+				D9915B9B2888B7C200AEEE4E /* Exception.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -199,6 +253,22 @@
 			path = Usecases;
 			sourceTree = "<group>";
 		};
+		D9915B852888056500AEEE4E /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B862888058700AEEE4E /* NumberTriviaView.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		D9915B962888A5B600AEEE4E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D9915B972888A5CC00AEEE4E /* NetworkInfo.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9915B6D2887F8B900AEEE4E /* Build configuration list for PBXNativeTarget "CleanArchitecture" */;
 			buildPhases = (
+				3608668267B79E029A2AEAEC /* [CP] Check Pods Manifest.lock */,
 				D9915B562887F8B200AEEE4E /* Sources */,
 				D9915B572887F8B200AEEE4E /* Frameworks */,
 				D9915B582887F8B200AEEE4E /* Resources */,
+				55D8C978E7A4ABE16C264501 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,15 +336,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3608668267B79E029A2AEAEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanArchitecture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55D8C978E7A4ABE16C264501 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArchitecture/Pods-CleanArchitecture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArchitecture/Pods-CleanArchitecture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanArchitecture/Pods-CleanArchitecture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9915B562887F8B200AEEE4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9915B9E2888BA6400AEEE4E /* NumberTriviaLocalDataSource.swift in Sources */,
 				D9915B6A2887F8B900AEEE4E /* CleanArchitecture.xcdatamodeld in Sources */,
 				D9915B672887F8B900AEEE4E /* Persistence.swift in Sources */,
+				D9915B952888A4E500AEEE4E /* NumberTriviaRepositoryImpl.swift in Sources */,
+				D9915B89288830C100AEEE4E /* NumberTrivia.swift in Sources */,
+				D9915B8B288837B500AEEE4E /* NumberTriviaRepository.swift in Sources */,
+				D9915B93288856A600AEEE4E /* NumberTriviaModel.swift in Sources */,
 				D9915B602887F8B200AEEE4E /* ContentView.swift in Sources */,
 				D9915B82288801D200AEEE4E /* Usecase.swift in Sources */,
+				D9915B982888A5CC00AEEE4E /* NetworkInfo.swift in Sources */,
+				D9915B91288851F900AEEE4E /* NumberTriviaUsecases.swift in Sources */,
+				D9915B9A2888AA9400AEEE4E /* NumberTriviaRemoteDataSource.swift in Sources */,
+				D9915B9C2888B7C200AEEE4E /* Exception.swift in Sources */,
+				D9915B872888058700AEEE4E /* NumberTriviaView.swift in Sources */,
 				D9915B7F288801B100AEEE4E /* Failures.swift in Sources */,
 				D9915B5E2887F8B200AEEE4E /* CleanArchitectureApp.swift in Sources */,
 			);
@@ -399,6 +523,7 @@
 		};
 		D9915B6E2887F8B900AEEE4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C670737101F4E91A1C3F1C9 /* Pods-CleanArchitecture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,6 +553,7 @@
 		};
 		D9915B6F2887F8B900AEEE4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5031502E9E200F425983132B /* Pods-CleanArchitecture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
