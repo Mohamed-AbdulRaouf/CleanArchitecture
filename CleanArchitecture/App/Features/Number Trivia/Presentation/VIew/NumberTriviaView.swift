@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct NumberTriviaView: View {
-    @State var number = 0
+    
+    @ObservedObject private var numberTriviaViewModel = NumberTriviaViewModel()
     @State var inputNumber = ""
     
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
                 VStack {
-                    Text("\(number)")
+                    Text(numberTriviaViewModel.numberTrivia?.number.description ?? "")
                         .font(.system(size: 25))
                         .padding(.top , 20)
                     Spacer()
-                    Text("\(number) is the number of laws of cricket.")
+                    Text(numberTriviaViewModel.numberTrivia?.text ?? "")
                         .font(.title2)
+                        .padding()
                     Spacer()
                     TextField("Please add number", text: $inputNumber)
                         .frame(height: 45, alignment: .center)
@@ -30,7 +32,8 @@ struct NumberTriviaView: View {
                         .cornerRadius(10)
                     HStack () {
                         Button(action: {
-                            
+                            let number: Int = Int(inputNumber) ?? 0
+                            self.numberTriviaViewModel.getConcreteNumberTrivia(number: number)
                         }) {
                             HStack {
                                 Text("Search")
@@ -40,10 +43,10 @@ struct NumberTriviaView: View {
                             .foregroundColor(Color.white)
                             .background(Color.green)
                             .cornerRadius(5)
-                        }.disabled(inputNumber == "")
+                        }
                         
                         Button(action: {
-                            
+                            self.numberTriviaViewModel.getRandomNumberTrivia()
                         }) {
                             HStack {
                                 Text("Get random trivia")
@@ -53,9 +56,12 @@ struct NumberTriviaView: View {
                             .foregroundColor(Color.white)
                             .background(Color.gray)
                             .cornerRadius(5)
-                        }.disabled(inputNumber == "")
+                        }
                     }
                     Spacer()
+                    Text(self.numberTriviaViewModel.errorMessage)
+                        .font(.system(size: 25))
+                        .foregroundColor(.red)
                 }
             }
             .navigationTitle("Number Trivia")
