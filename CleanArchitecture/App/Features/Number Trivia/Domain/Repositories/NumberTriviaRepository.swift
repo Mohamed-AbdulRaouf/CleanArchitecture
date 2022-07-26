@@ -11,6 +11,6 @@ typealias NumberTriviaHandler = (Failures?, NumberTrivia?) -> ()
 
 protocol NumberTriviaRepository: AnyObject {
     
-    func getConcreteNumberTrivia(number: Int, completion: NumberTriviaHandler)
-    func getRandomNumberTrivia(completion: NumberTriviaHandler)
+    func getConcreteNumberTrivia(number: Int, completion: @escaping NumberTriviaHandler)
+    func getRandomNumberTrivia(completion: @escaping NumberTriviaHandler)
 }

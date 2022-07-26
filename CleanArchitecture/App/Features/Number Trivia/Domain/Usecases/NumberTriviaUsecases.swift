@@ -8,12 +8,17 @@
 import Foundation
 
 class NumberTriviaUsecases: NumberTriviaRepository {
+    let repository = NumberTriviaRepositoryImpl(remoteDataSource: NumberTriviaRemoteDataSource(), localDataSource: NumberTriviaLocalDataSource())
     
-    func getConcreteNumberTrivia(number: Int, completion: (Failures? , NumberTrivia?) -> ()) {
-        
+    func getConcreteNumberTrivia(number: Int, completion: @escaping (Failures? , NumberTrivia?) -> ()) {
+        repository.getConcreteNumberTrivia(number: number) { error, data in
+            completion(error,data)
+        }
     }
     
-    func getRandomNumberTrivia(completion: (Failures? , NumberTrivia?) -> ()) {
-        
+    func getRandomNumberTrivia(completion: @escaping (Failures? , NumberTrivia?) -> ()) {
+        repository.getRandomNumberTrivia { error, data in
+            completion(error,data)
+        }
     }
 }
