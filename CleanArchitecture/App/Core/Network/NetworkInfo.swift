@@ -13,11 +13,12 @@ protocol NetworkInfo {
 }
 
 class NetworkInfoImpl: NetworkInfo {
+    
     static var shared = NetworkInfoImpl()
     var connectivity = Connectivity()
     var isConnected: Bool
     
     init() {
-        self.isConnected = self.connectivity.isConnected
+        self.isConnected = true //self.connectivity.isConnected
     }
 }

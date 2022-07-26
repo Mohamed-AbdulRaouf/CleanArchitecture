@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90E35E828893BC700982568 /* ConstantUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90E35E728893BC700982568 /* ConstantUrl.swift */; };
+		D90E35EC2889489400982568 /* NumberTriviaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90E35EB2889489400982568 /* NumberTriviaViewModel.swift */; };
 		D9915B5E2887F8B200AEEE4E /* CleanArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B5D2887F8B200AEEE4E /* CleanArchitectureApp.swift */; };
 		D9915B602887F8B200AEEE4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9915B5F2887F8B200AEEE4E /* ContentView.swift */; };
 		D9915B622887F8B900AEEE4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9915B612887F8B900AEEE4E /* Assets.xcassets */; };
@@ -31,6 +33,9 @@
 /* Begin PBXFileReference section */
 		5031502E9E200F425983132B /* Pods-CleanArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitecture.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitecture/Pods-CleanArchitecture.release.xcconfig"; sourceTree = "<group>"; };
 		5C670737101F4E91A1C3F1C9 /* Pods-CleanArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitecture.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitecture/Pods-CleanArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
+		D90E35E728893BC700982568 /* ConstantUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantUrl.swift; sourceTree = "<group>"; };
+		D90E35E9288941CC00982568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D90E35EB2889489400982568 /* NumberTriviaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTriviaViewModel.swift; sourceTree = "<group>"; };
 		D9915B5A2887F8B200AEEE4E /* CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9915B5D2887F8B200AEEE4E /* CleanArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureApp.swift; sourceTree = "<group>"; };
 		D9915B5F2887F8B200AEEE4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +87,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D90E35EA2889487F00982568 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D90E35EB2889489400982568 /* NumberTriviaViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D9915B512887F8B200AEEE4E = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 		D9915B5C2887F8B200AEEE4E /* CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				D90E35E9288941CC00982568 /* Info.plist */,
 				D9915B702888016A00AEEE4E /* App */,
 				D9915B5D2887F8B200AEEE4E /* CleanArchitectureApp.swift */,
 				D9915B5F2887F8B200AEEE4E /* ContentView.swift */,
@@ -232,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				D9915B852888056500AEEE4E /* VIew */,
+				D90E35EA2889487F00982568 /* ViewModel */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -265,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				D9915B972888A5CC00AEEE4E /* NetworkInfo.swift */,
+				D90E35E728893BC700982568 /* ConstantUrl.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -387,10 +403,12 @@
 				D9915B6A2887F8B900AEEE4E /* CleanArchitecture.xcdatamodeld in Sources */,
 				D9915B672887F8B900AEEE4E /* Persistence.swift in Sources */,
 				D9915B952888A4E500AEEE4E /* NumberTriviaRepositoryImpl.swift in Sources */,
+				D90E35EC2889489400982568 /* NumberTriviaViewModel.swift in Sources */,
 				D9915B89288830C100AEEE4E /* NumberTrivia.swift in Sources */,
 				D9915B8B288837B500AEEE4E /* NumberTriviaRepository.swift in Sources */,
 				D9915B93288856A600AEEE4E /* NumberTriviaModel.swift in Sources */,
 				D9915B602887F8B200AEEE4E /* ContentView.swift in Sources */,
+				D90E35E828893BC700982568 /* ConstantUrl.swift in Sources */,
 				D9915B82288801D200AEEE4E /* Usecase.swift in Sources */,
 				D9915B982888A5CC00AEEE4E /* NetworkInfo.swift in Sources */,
 				D9915B91288851F900AEEE4E /* NumberTriviaUsecases.swift in Sources */,
@@ -533,6 +551,7 @@
 				DEVELOPMENT_TEAM = NZH8HDS5R8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanArchitecture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -563,6 +582,7 @@
 				DEVELOPMENT_TEAM = NZH8HDS5R8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanArchitecture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -7,6 +7,4 @@ target 'CleanArchitecture' do
 
   # Pods for CleanArchitecture
 pod "Connectivity"
-
-
 end
