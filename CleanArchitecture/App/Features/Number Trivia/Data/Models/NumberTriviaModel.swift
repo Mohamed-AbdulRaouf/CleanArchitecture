@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NumberTriviaModel {
+struct NumberTriviaModel: Codable {
     let text : String?
     let number : Int?
     
