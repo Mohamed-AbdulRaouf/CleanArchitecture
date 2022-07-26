@@ -18,13 +18,13 @@ class NumberTriviaRepositoryImpl: NumberTriviaRepository {
         self.localDataSource = localDataSource
     }
     
-    func getConcreteNumberTrivia(number: Int, completion: (Failures?, NumberTrivia?) -> ()) {
+    func getConcreteNumberTrivia(number: Int, completion: @escaping (Failures?, NumberTrivia?) -> ()) {
         if NetworkInfoImpl.shared.isConnected {
-            remoteDataSource?.getConcreteNumberTrivia(number: number, completion: { data in
+            remoteDataSource?.getConcreteNumberTrivia(number: number, completion: { error, data in
                 guard let data = data else {return}
                 self.localDataSource?.cacheNumberTrivia(triviaToCache: data)
                 let entite = NumberTrivia(number: data.number ?? 0, text: data.text ?? "")
-                completion(nil,entite)
+                completion(error,entite)
             })
         } else {
             self.getLastNumberTrivia {failure, data in
@@ -33,13 +33,17 @@ class NumberTriviaRepositoryImpl: NumberTriviaRepository {
         }
     }
     
-    func getRandomNumberTrivia(completion: (Failures?, NumberTrivia?) -> ()) {
+    func getRandomNumberTrivia(completion: @escaping (Failures?, NumberTrivia?) -> ()) {
         if NetworkInfoImpl.shared.isConnected {
-            remoteDataSource?.getRandomNumberTrivia(completion: { data in
+            remoteDataSource?.getRandomNumberTrivia(completion: { error, data in
+                if error != nil {
+                    completion(error, nil)
+                    return
+                }
                 guard let data = data else {return}
                 self.localDataSource?.cacheNumberTrivia(triviaToCache: data)
                 let entite = NumberTrivia(number: data.number ?? 0, text: data.text ?? "")
-                completion(nil,entite)
+                completion(error,entite)
             })
         } else {
             self.getLastNumberTrivia {failure, data in
@@ -48,7 +52,7 @@ class NumberTriviaRepositoryImpl: NumberTriviaRepository {
         }
     }
     
-    private func getLastNumberTrivia(completion: (Failures?, NumberTrivia?) -> ()) {
+    private func getLastNumberTrivia(completion: @escaping (Failures?, NumberTrivia?) -> ()) {
         localDataSource?.getLastNumberTrivia(completion: { data in
             let entite = NumberTrivia(number: data.number ?? 0, text: data.text ?? "")
             completion(nil,entite)
