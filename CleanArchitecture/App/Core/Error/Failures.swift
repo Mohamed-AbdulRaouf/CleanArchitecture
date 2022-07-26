@@ -7,14 +7,19 @@
 
 import Foundation
 
-public typealias Failure = (Error)
-
-enum FailuresError: Error {
+enum FailuresMessageError: String {
     case noInternet
+    case decodingError
+    case cacheException
+    case serverException
 }
 
 class Failures: Error {
     var message = ""
+    
+    init(message: String = "") {
+        self.message = message
+    }
 }
 
 class ServerFailure: Failures {}
